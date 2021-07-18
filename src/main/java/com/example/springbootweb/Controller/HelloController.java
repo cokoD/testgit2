@@ -27,6 +27,7 @@ public class HelloController {
         return this.userservice.queryUserById(id);
     }
 
+
     @GetMapping("/all")
     public List<user> queryUser(){
         return this.userservice.queryUsers();
