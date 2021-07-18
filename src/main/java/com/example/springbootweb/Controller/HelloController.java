@@ -22,6 +22,11 @@ public class HelloController {
         return "hello,world";
     }
 
+    @GetMapping("/hello1")
+    public String hello1(){
+        return "hello1,world";
+    }
+
     @GetMapping("{id}")
     public user queryUserById(@PathVariable("id") Long id){
         return this.userservice.queryUserById(id);
